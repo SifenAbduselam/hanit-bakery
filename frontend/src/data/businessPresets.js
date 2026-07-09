@@ -39,50 +39,59 @@ export const businessPresets = {
     ],
 
     // 👇 4. PRODUCTS SECTION (With your new categories added!)
-    products: [
-      {
-        id: 1,
-        name: "White Coconut",
-        description: "Delicate coconut cake with creamy, rich frosting.",
-        price: "$45", 
-        category: "Birthday" // 👈 NEW CATEGORY
-      },
-      {
-        id: 2,
-        name: "Black Strawberry",
-        description: "Rich dark chocolate cake layered with fresh strawberries.",
-        price: "$50",
-        category: "Birthday" // 👈 NEW CATEGORY
-      },
-      {
-        id: 3,
-        name: "Kinder Biscoff",
-        description: "Indulgent Biscoff spread layered with Kinder chocolate.",
-        price: "$55",
-        category: "Special Events" // 👈 NEW CATEGORY
-      },
-      {
-        id: 4,
-        name: "Oreo",
-        description: "Classic Oreo cookie cake with smooth cream cheese frosting.",
-        price: "$48",
-        category: "Birthday" // 👈 NEW CATEGORY
-      },
-      {
-        id: 5,
-        name: "White Strawberry",
-        description: "Light vanilla sponge topped with glazed fresh strawberries.",
-        price: "$52",
-        category: "Wedding" // 👈 NEW CATEGORY
-      },
-      {
-        id: 6,
-        name: "Lotus Biscoff",
-        description: "Caramelized Biscoff crumbs with creamy lotus spread.",
-        price: "$50",
-        category: "Holiday" // 👈 NEW CATEGORY
-      }
-    ],
+   // src/data/businessPresets.js
+products: [
+  // CAKES
+  {
+    id: 1,
+    name: "White Coconut",
+    description: "Delicate coconut cake with creamy frosting",
+    price: "$45",
+    category: "Cake", // 👈 Cake category
+  },
+  {
+    id: 2,
+    name: "Black Strawberry",
+    description: "Rich chocolate cake with fresh strawberries",
+    price: "$50",
+    category: "Cake",
+  },
+  
+  // COOKIES
+  {
+    id: 3,
+    name: "Kinder Biscoff",
+    description: "Indulgent Biscoff spread with Kinder chocolate",
+    price: "$55",
+    category: "Cookie", // 👈 Cookie category
+  },
+  {
+    id: 4,
+    name: "Oreo",
+    description: "Classic Oreo cookie cake with cream cheese frosting",
+    price: "$48",
+    category: "Cookie",
+  },
+  
+  // BREAD
+  {
+    id: 5,
+    name: "White Strawberry",
+    description: "Light vanilla sponge topped with glazed fresh strawberries",
+    price: "$52",
+    category: "Bread", // 👈 Bread category
+  },
+  {
+    id: 6,
+    name: "Lotus Biscoff",
+    description: "Caramelized Biscoff crumbs with creamy lotus spread",
+    price: "$50",
+    category: "Bread",
+  },
+]
+      
+  
+ 
 
     // 👇 5. CONTACT SECTION
     contact: {
