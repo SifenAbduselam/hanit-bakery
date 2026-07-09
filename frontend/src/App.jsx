@@ -2,6 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Values from "./components/Values";
 import Products from "./components/Products";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -30,8 +31,10 @@ export default function App() {
             <>
               <Navbar />
               <Home />
-              <Products />
+              <Values /> 
               <About />
+              <Products />
+              
               <Contact />
               <Footer />
             </>
