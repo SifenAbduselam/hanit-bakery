@@ -9,7 +9,7 @@ export default function Home() {
   return (
 <section 
   id="home"
-  className="relative min-h-screen flex items-center bg-cover bg-[25%_center]"
+  className="relative min-h-screen flex items-center bg-cover bg-[20%_50%]"
   style={{ backgroundImage: `url(${heroBg})` }}
 >
       {/* Minimal Overlay */}
