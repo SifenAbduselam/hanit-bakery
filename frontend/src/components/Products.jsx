@@ -22,9 +22,7 @@ export default function Products() {
 
   return (
     <section id="products" className="w-full my-16 md:my-24 px-0">
-      
       <div className="w-full bg-[#8B4A5A] shadow-2xl py-16 md:py-20">
-        
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           
           <div className="text-center mb-12">
@@ -46,7 +44,7 @@ export default function Products() {
                   <div className="relative h-56 overflow-hidden">
                     <img src={productImage} alt={product.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     
-                    {/* CATEGORY BADGE */}
+                    {/* NEW: Category Badge on the image */}
                     {product.category && (
                       <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
                         <span className="text-xs font-medium text-[#8B4A5A] uppercase tracking-wider">
@@ -56,30 +54,25 @@ export default function Products() {
                     )}
                   </div>
                   <div className="p-6">
+                    {/* REMOVED THE PRICE HERE */}
                     <h3 className="text-xl font-serif text-white leading-tight mb-3 group-hover:text-[#F5E0E3] transition-colors">
                       {product.name}
                     </h3>
-                    <p className="text-white/80 text-sm leading-relaxed font-light mb-4">
-                      {product.description}
-                    </p>
-                    
-                    {/* INQUIRE BUTTON INSTEAD OF PRICE */}
-                    <a href="#contact" className="inline-block text-sm text-[#F5E0E3] hover:text-white font-medium uppercase tracking-wider transition-colors">
-                      Inquire for Price →
-                    </a>
+                    <p className="text-white/80 text-sm leading-relaxed font-light">{product.description}</p>
                   </div>
                 </div>
               );
             })}
           </div>
 
-          {/* VIEW MORE BUTTON - Links to Gallery */}
+          {/* CHANGED: The bottom button now links to the Gallery */}
           <div className="text-center mt-14">
             <p className="text-white/90 text-lg mb-6 font-light">Want to see our full collection?</p>
             <a href="#gallery" className="inline-block bg-white text-[#8B4A5A] hover:bg-[#F5E0E3] px-10 py-3 text-sm font-medium uppercase tracking-wider transition-all shadow-lg hover:shadow-xl">
-              View All Cakes
+              View All Cakes →
             </a>
           </div>
+
         </div>
       </div>
     </section>
