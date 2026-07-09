@@ -39,7 +39,7 @@ export const businessPresets = {
     ],
 
     // 👇 4. PRODUCTS SECTION (With your new categories added!)
-   // src/data/businessPresets.js
+  // src/data/businessPresets.js
 products: [
   // CAKES
   {
@@ -88,10 +88,7 @@ products: [
     price: "$50",
     category: "Bread",
   },
-]
-      
-  
- 
+],
 
     // 👇 5. CONTACT SECTION
     contact: {
