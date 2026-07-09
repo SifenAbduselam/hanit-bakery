@@ -9,32 +9,22 @@ export default function Home() {
   return (
     <section 
       id="home"
-      className="relative min-h-screen flex items-center bg-cover bg-[80%_50%]"
+      className="relative min-h-screen flex items-center bg-cover bg-[20%_50%]"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* Minimal Overlay - Lighter on the right where text is */}
-      <div className="absolute inset-0 bg-gradient-to-l from-white/60 via-white/30 to-transparent" />
+      {/* Minimal Overlay - Lighter on the left where text is */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/30 to-transparent" />
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Empty left column - lets cake show through */}
-          <div className="hidden lg:block"></div>
           
-          {/* Right column - Content */}
-          <div className="text-left lg:pl-12">
-            
-            {/* Animated Badge */}
-            <div className="inline-flex items-center gap-2 bg-[#F5E0E3]/80 backdrop-blur-md border border-[#D4A3A3] px-5 py-2 rounded-full mb-8 animate-fade-in-down">
-              <span className="w-2 h-2 bg-[#5C2A32] rounded-full animate-pulse"></span>
-              <span className="text-[#5C2A32] text-xs font-bold uppercase tracking-widest">
-                {data.heroSubtitle}
-              </span>
-            </div>
+          {/* Left column - Content */}
+          <div className="text-left lg:pr-12">
             
             {/* Welcome Text */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-[#5C2A32] leading-tight mb-6 animate-slide-up drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-              Welcome to<br />Bi-Sweet
+              Welcome to<br />Hanit Bakery
             </h1>
             
             {/* Description */}
@@ -58,11 +48,14 @@ export default function Home() {
               </a>
             </div>
           </div>
+          
+          {/* Empty right column - lets cake show through */}
+          <div className="hidden lg:block"></div>
         </div>
       </div>
 
-      {/* Scroll Indicator - Moved to right side */}
-      <div className="absolute bottom-10 right-1/4 animate-bounce hidden lg:block">
+      {/* Scroll Indicator - Moved to left side */}
+      <div className="absolute bottom-10 left-1/4 animate-bounce hidden lg:block">
         <span className="text-[#5C2A32] text-sm uppercase tracking-widest block mb-2 drop-shadow-sm">Scroll</span>
         <div className="w-0.5 h-10 bg-[#5C2A32] rounded-full mx-auto"></div>
       </div>
