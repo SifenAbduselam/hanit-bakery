@@ -12,11 +12,11 @@ export default function Home() {
       className="relative h-screen w-full overflow-hidden bg-cover bg-right-bottom bg-no-repeat bg-fixed"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* OVERLAY - Constrained to section bounds */}
+      {/* OVERLAY */}
       <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent" />
       
-      {/* Content */}
-      <div className="relative z-10 w-full h-full flex items-center px-4 sm:px-6 lg:px-8">
+      {/* Content - Moved slightly down with pt-20 */}
+      <div className="relative z-10 w-full h-full flex items-center px-4 sm:px-6 lg:px-8 pt-20">
         
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -24,8 +24,9 @@ export default function Home() {
             {/* Left column - Content */}
             <div className="lg:col-span-4 lg:col-start-1 text-left -ml-4 lg:-ml-12">
               
+              {/* Text in one line */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#5C2A32] leading-tight mb-4 animate-slide-up drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-                Welcome to<br />Hanit Bakery
+                Welcome to Hanit Bakery
               </h1>
               
               <p className="text-[#5C2A32]/90 text-base md:text-lg mb-8 max-w-md animate-slide-up font-medium leading-relaxed" style={{ animationDelay: '0.4s' }}>
@@ -54,11 +55,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/4 animate-bounce hidden lg:block">
-        <span className="text-[#5C2A32] text-sm uppercase tracking-widest block mb-2 drop-shadow-sm">Scroll</span>
-        <div className="w-0.5 h-10 bg-[#5C2A32] rounded-full mx-auto"></div>
-      </div>
+      {/* Scroll Indicator - REMOVED */}
     </section>
   );
 }
