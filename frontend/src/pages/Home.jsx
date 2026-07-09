@@ -24,25 +24,25 @@ export default function Home() {
             {/* Left column - Content */}
             <div className="lg:col-span-4 lg:col-start-1 text-left -ml-4 lg:-ml-12">
               
-              {/* Text in one line */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#5C2A32] leading-tight mb-4 animate-slide-up drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-                Welcome to Hanit Bakery
+              {/* Two lines: Welcome to / Hanit Bakery */}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#5C2A32] leading-tight mb-6 animate-slide-up drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
+                Welcome to<br />Hanit Bakery
               </h1>
               
-              <p className="text-[#5C2A32]/90 text-base md:text-lg mb-8 max-w-md animate-slide-up font-medium leading-relaxed" style={{ animationDelay: '0.4s' }}>
+              <p className="text-[#5C2A32]/90 text-sm md:text-base mb-8 max-w-sm animate-slide-up font-medium leading-relaxed" style={{ animationDelay: '0.4s' }}>
                 {data.heroText}
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: '0.6s' }}>
+              <div className="flex flex-col sm:flex-row gap-3 animate-slide-up" style={{ animationDelay: '0.6s' }}>
                 <Link 
                   to="/booking"
-                  className="inline-block bg-[#5C2A32] text-white hover:bg-[#4A2228] px-8 py-3 text-sm font-bold transition-all uppercase tracking-wider hover:scale-105 hover:shadow-2xl text-center shadow-lg"
+                  className="inline-block bg-[#5C2A32] text-white hover:bg-[#4A2228] px-6 py-2.5 text-xs font-bold transition-all uppercase tracking-wider hover:scale-105 hover:shadow-2xl text-center shadow-lg"
                 >
                   Order Now →
                 </Link>
                 <a 
                   href="#products"
-                  className="inline-block bg-white border-2 border-[#5C2A32] text-[#5C2A32] hover:bg-[#5C2A32] hover:text-white px-8 py-3 text-sm font-bold transition-all uppercase tracking-wider text-center shadow-md"
+                  className="inline-block bg-white border-2 border-[#5C2A32] text-[#5C2A32] hover:bg-[#5C2A32] hover:text-white px-6 py-2.5 text-xs font-bold transition-all uppercase tracking-wider text-center shadow-md"
                 >
                   View Products
                 </a>
