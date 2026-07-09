@@ -16,11 +16,13 @@ export default function Home() {
       <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent" />
       
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        
+        {/* Changed to a 12-column grid to push text to the far left */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          {/* Left column - Content */}
-          <div className="text-left lg:pr-12">
+          {/* Left column - Content (Takes up 4 out of 12 columns) */}
+          <div className="lg:col-span-4 lg:col-start-1 text-left">
             
             {/* Welcome Text */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-[#5C2A32] leading-tight mb-6 animate-slide-up drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
@@ -49,8 +51,8 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Empty right column - lets cake show through */}
-          <div className="hidden lg:block"></div>
+          {/* Empty right column - lets cake show through (Takes up remaining 8 columns) */}
+          <div className="hidden lg:block lg:col-span-8"></div>
         </div>
       </div>
 
