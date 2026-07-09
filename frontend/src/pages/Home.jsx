@@ -7,11 +7,11 @@ export default function Home() {
   const data = businessPresets.bakery;
 
   return (
-    <section 
-      id="home"
-      className="relative min-h-screen flex items-center bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(${heroBg})` }}
-    >
+  <section 
+  id="home"
+  className="relative min-h-screen flex items-center bg-cover bg-center"
+  style={{ backgroundImage: `url(${heroBg})` }}
+>
       {/* Minimal Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-white/20 to-transparent" />
       
