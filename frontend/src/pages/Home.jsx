@@ -12,8 +12,8 @@ export default function Home() {
       className="relative min-h-screen flex items-center bg-cover bg-[20%_50%]"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* Minimal Overlay - Lighter on the left where text is */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/30 to-transparent" />
+      {/* STRONGER OVERLAY: Increased opacity on the left for better text visibility */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent" />
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Scroll Indicator - Moved to left side */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/4 animate-bounce hidden lg:block">
         <span className="text-[#5C2A32] text-sm uppercase tracking-widest block mb-2 drop-shadow-sm">Scroll</span>
         <div className="w-0.5 h-10 bg-[#5C2A32] rounded-full mx-auto"></div>
